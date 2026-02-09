@@ -51,7 +51,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1000&q=80');
+  background: linear-gradient(rgb(44, 62, 80, 0.8), rgb(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1000&q=80');
   background-size: cover;
   color: white;
   text-align: center;
@@ -61,7 +61,7 @@ nav a {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
   border-left: 5px solid var(--accent-color);
 }
 
