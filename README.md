@@ -14,22 +14,23 @@ This website serves as a professional digital portfolio for Maudy Musundire, a 2
 - **Mobile Responsive:** Optimized for viewing on desktops, tablets, and mobile devices.
 - **Academic Highlights:** Dedicated sections for education and research focus.
 - **Linted CSS:** Follows industry standards for clean code using Stylelint.
-- **CI/CD Workflow Documentation
-For this project, I implemented a Continuous Integration (CI) pipeline using GitHub Actions. This ensures that every time I contribute to the codebase, the changes are automatically validated to maintain high standards.
+**CI Workflow Setup**
+This project implements a Continuous Integration (CI) pipeline using GitHub Actions to automate code validation and quality control.
 
-How the Pipeline Works:
-Trigger: The workflow is triggered on every push or pull_request to the main branch.
+1. Workflow Configuration
+The workflow is defined in .github/workflows/ci.yml and is triggered on every push or pull request to the main branch.
 
-Environment: The jobs run on a virtual ubuntu-latest server.
+2. Validation Steps
+The pipeline executes a series of automated jobs to ensure the site's integrity:
 
-Validation Steps:
+Environment Setup: Initializes a virtual Ubuntu environment and installs Node.js.
 
-Linting: Uses Stylelint to analyze style.css for syntax errors and inconsistent formatting.
+CSS Linting: Uses Stylelint with the stylelint-config-standard to catch syntax errors and enforce consistent formatting in style.css.
 
-HTML Validation: Uses html-validate to check index.html for broken tags, accessibility issues (like missing alt text), and structural integrity.
+HTML Validation: Employs html-validate to check index.html for structural errors, missing attributes, and non-encoded characters.
 
-Reporting: If any step fails, a Red X appears, and the deployment is halted. If all steps pass, a Green Checkmark confirms the code is production-ready.
-
+3. Monitoring
+The success or failure of the build is visually represented by a status badge at the top of this document. A Green Checkmark indicates the code is valid and production-ready, while a Red X alerts the developer to errors that must be fixed.
 ## 📂 Project Structure
 ```text
 ├── index.html          # Main structure of the website
