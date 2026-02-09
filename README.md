@@ -14,6 +14,7 @@ This website serves as a professional digital portfolio for Maudy Musundire, a 2
 - **Mobile Responsive:** Optimized for viewing on desktops, tablets, and mobile devices.
 - **Academic Highlights:** Dedicated sections for education and research focus.
 - **Linted CSS:** Follows industry standards for clean code using Stylelint.
+- 
 **CI Workflow Setup**
 This project implements a Continuous Integration (CI) pipeline using GitHub Actions to automate code validation and quality control.
 
