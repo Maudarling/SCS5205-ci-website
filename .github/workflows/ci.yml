@@ -1,6 +1,5 @@
 name: CI Pipeline
 
-# Step 8: Customize Triggers
 on:
   push:
     branches: [ "main" ]
@@ -12,27 +11,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Check out the code from GitHub
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    # Setup Node.js to run the Stylelint tool
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
 
-    # Install the tools needed for validation
-    - name: Install Dependencies
-      run: |
-        npm install stylelint stylelint-config-standard
+    # Step 4: Build/Validation (CSS)
+    - name: Install Stylelint
+      run: npm install stylelint stylelint-config-standard
 
-    # Step 4: Build/Validation Step (Using Stylelint)
     - name: Run CSS Lint
       run: npx stylelint "style.css"
 
-    # Step 5: Testing Step (Check for broken HTML tags)
+    # Step 5: Testing Step (Validating HTML)
+    # This uses a local check to ensure HTML is well-formed
     - name: Validate HTML
-      uses: html-validate/html-validate-action@v1
-      with:
-        files: index.html
+      run: |
+        npx html-validate index.html
