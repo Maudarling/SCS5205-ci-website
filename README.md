@@ -1,7 +1,7 @@
 [![Deploy static content to Pages](https://github.com/Maudarling/SCS5205-ci-website/actions/workflows/static.yml/badge.svg)](https://github.com/Maudarling/SCS5205-ci-website/actions/workflows/static.yml)
 # Maudy Musundire | Personal Portfolio
 
-This is a clean, professional, and responsive personal website designed to showcase my academic journey as a Master's student at **NUST University**.
+This website serves as a professional digital portfolio for Maudy Musundire, a 26-year-old Master's student at the National University of Science and Technology (NUST). The goal of the project is to showcase academic achievements, research interests, and technical proficiency in a clean, accessible format.
 
 ## 👤 About Me
 * **Name:** Maudy Musundire
